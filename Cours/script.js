@@ -40,7 +40,7 @@ let modules = [
     {
         "title":"Électromagnétisme dans le Vide",
         "text":"Prof: Youssef HADDOUT <br> Filière : SMI (S4) <br>2020-2021 ",
-        "image":'Haddout.jpg',
+        "image":'haddout.png',
         "Cours": [
                 {
                     'chapiter':'Chapitre 1',
@@ -56,7 +56,7 @@ let modules = [
     {
             "title":"Architecure des ordinateurs",
             "text":"Prof: Bouain Abdelhadi <br>Filière : SMI (S4) <br>2023-2022 ",
-            "image":'Haddout.jpg',
+            "image":'Architecure des ordinateurs.png',
             "Cours": [
                     {
                         'chapiter':'Architecure des ordinateurs',
@@ -69,7 +69,7 @@ let modules = [
     {
                 "title":"Programmation II ",
                 "text":"Prof: OMARI Kamal <br> Filière : SMI (S4) <br>2023-2024 ",
-                "image":'Haddout.jpg',
+                "image":'Programmation II.png',
                 "Cours": [
                         {
                             'chapiter':'Chapitre 1',
@@ -82,7 +82,7 @@ let modules = [
     {
                     "title":"Structure de donnee  ",
                     "text":"Prof: Abdelhadi Bouain <br> Filière : SMI (S4) <br>2021 ",
-                    "image":'Haddout.jpg',
+                    "image":'Structure de donnee.png',
                     "Cours": [
                             {
                                 'chapiter':'Chapitre 1',
@@ -106,7 +106,7 @@ let modules = [
     {
             "title":"SYSTÈME D'EXPLOITATION ",
             "text":"Prof: Dbibih Imane <br> Filière : SMI (S4) <br>2019-2020 ",
-            "image":'Haddout.jpg',
+            "image":'SYSTEME D EXPLOITATION.png',
             "Cours": [
                     {
                         'chapiter':'Partie 1',
@@ -132,7 +132,7 @@ let TDs = [
     {
         "title":"Électromagnétisme dans le Vide",
         "text":"Prof: Youssef HADDOUT <br> Filière : SMI (S4) <br>2020-2021 ",
-        "image":'Haddout.jpg',
+        "image":'haddout.png',
         "Cours": [
                 {
                     'chapiter':'Td serie 1',
@@ -148,7 +148,7 @@ let TDs = [
     {
         "title":"Architecure des ordinateurs",
         "text":"Prof: Bouain Abdelhadi <br>Filière : SMI (S4) <br>2023-2022 ",
-        "image":'Haddout.jpg',
+        "image":'Architecure des ordinateurs.png',
         "Cours": [
                     
                 
@@ -158,7 +158,7 @@ let TDs = [
     {
                 "title":"Programmation II  ",
                 "text":"Prof: KRIT Salahddine <br> Filière : SMI (S4) <br>2020-2021 ",
-                "image":'Haddout.jpg',
+                "image":'Programmation II.png',
                 "Cours": [
                         {
                         'chapiter':'Tp serie 1',
@@ -183,7 +183,7 @@ let TDs = [
     {
                 "title":"Structure de donnee  ",
                 "text":"Prof: Abdelhadi Bouain <br> Filière : SMI (S4) <br>2021 ",
-                "image":'Haddout.jpg',
+                "image":'Structure de donnee.png',
                 "Cours": [
                             {
                                 'chapiter':'TPs serie 3',
@@ -199,7 +199,7 @@ let TDs = [
     {
             "title":"SYSTÈME D'EXPLOITATION ",
             "text":"Prof: Dbibih Imane <br> Filière : SMI (S4) <br>2019-2020 ",
-            "image":'Haddout.jpg',
+            "image":'SYSTEME D EXPLOITATION.png',
             "Cours": [
                     {
                         'chapiter':'Tds serie 1',
@@ -234,7 +234,6 @@ function AfficherTab(divList,listes,typeLs){
             <div class="img">
                 <img src="Cours/img/${modul.image}" alt="">
             </div>
-            <h1 class=" capitalize text-xl mb-2 h-[56px]">${modul.title}</h1>
             <p>${modul.text}</p>
             <button class="leading-[0]" onclick="callafficher${typeLs}(${i})">
                 <span class="material-symbols-outlined leading-[0]">
@@ -266,9 +265,11 @@ function afficherCour(i,listes){
             </span></div>
         <div id="box" class="container rounded-md rounded-br-none rounded-tr-none bg-redColorHovr mx-auto p-5 border-solid border-2  border-withbg ">
         <h1 class="text-withbg text-xl">${listes[i].title} :</h1>
-            
+        
         </div>
-        <div  class="h-full bg-white rounded-md rounded-bl-none rounded-tl-none border-solid border-2 border-l-stone-700  border-l-0 sm:hidden"></div>
+        <div  class="h-full bg-white rounded-md rounded-bl-none rounded-tl-none border-solid border-2 border-l-stone-700  border-l-0 sm:hidden">
+            <img src="Cours/img/${listes[i].image}" alt="">
+        </div>
     </div>
     `
     afficherChapit(i,listes)
