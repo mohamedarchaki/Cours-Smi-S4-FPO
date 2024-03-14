@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours SMI S4 FPO</title>
+    <!-- add icon in googel icon  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link href="./Cours/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="Cours/style.css">
+  </head>
+
+  <body>
+    <div class="header relative bg-withHead shadow-md">
+      <div class="container px-4 mx-auto py-2  flex justify-between ">
+        <h1>Coure</h1>
+        <ul id="menu" class="nav__listlinks sm:shadow-md z-10 sm:space-y-8 sm:py-3">
+
+          <li class="nav__links ">
+            <a href="" class="nav__link tracking-wide">Home</a>
+          </li>
+          <li class="nav__links tracking-wide">
+            <a href="" class="nav__link">About</a>
+          </li>
+          <li class="nav__links tracking-wide">
+            <a href="" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__links tracking-wide">
+            <a href="" class="nav__link">Services</a>
+          </li>
+        </ul>
+        <div class="menu-btn sm:block hidden cursor-pointer  ">
+          
+          <span id="menu-span" class="material-symbols-outlined">menu</span>
+        </div>
+      </div>
+    </div>
+    <!-- start home  -->
+    <div class="home h-full bg-withbg m-0">
+      <div class="container gap-3 px-4 h-full justify-center items-center py-4 mx-auto grid grid-cols-2 sm:grid-cols-1 ">
+        <div class="box">
+        <h1 class="text-3xl my-1 sm:text-2xl">Lorem ipsum dolor sit amet consectetur</h1>
+        <p class="text-zinc-800 text-lg font-medium max-w-prose leading-7 my-5 sm:mt-0 sm:leading-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa eligendi ad velit maxime. Ad reiciendis quo veritatis, ab beatae, mollitia deserunt sit praesentium, doloremque aliquid doloribus voluptate autem odit.</p>
+        <button class="bg-redClolor text-slate-50 py-2 px-4 rounded-sm font-bold tracking-wide transition hover:bg-red-500">Git Start</button>
+      </div>
+      <div class="box2 relative">
+        <img src="Cours/img/pngwing.com.png" alt="">
+      </div>
+      </div>
+    </div>
+    <!-- end home  --> 
+    <!--==================
+      ======start coure====
+    ====================-->
+      <div class="cours py-4">
+        <div class="container mx-auto px-4"> 
+        <div class="header flex space-x-2">
+          <button class="btnHead is-active">All</button>
+          <button class="btnHead">Cour</button>
+          <button class="btnHead">Td</button>
+        </div>
+        <div class="cour Cours relative">
+          <div class="left_btn left-0  ">
+            <span class="material-symbols-outlined">
+              chevron_left
+              </span>
+          </div>
+        
+        <div class="cour_list relative">
+          <div class="list flex">
+          
+        </div>
+        
+        </div> 
+          <div class="right_btn right-0 ">
+            <span class="material-symbols-outlined">
+              chevron_right
+              </span>
+          </div>
+      </div>
+      <div class="cour td relative">
+        <div class="left_btn left-0 " id="left_btn1">
+          <span class="material-symbols-outlined">
+            chevron_left
+            </span>
+        </div>
+      
+      <div class="cour_list cour_list1  relative">
+        <div class="listTd flex">
+        
+      </div>
+      
+      </div> 
+        <div id="right_btn1" class="right_btn right-0 ">
+          <span class="material-symbols-outlined">
+            chevron_right
+            </span>
+        </div>
+    </div>
+    </div>
+
+  </div>
+  <div class="afficher-div">
+
+  </div>
+    <!--==================
+      ======end coure====
+    ====================-->
+    <script src="Cours/script.js"></script>
+  </body>
+</html>

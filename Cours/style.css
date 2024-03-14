@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body{
+        font-family: "Roboto", sans-serif;
+    }
+@layer base{
+    
+    h1{
+        @apply text-red-600 font-bold text-2xl;
+    }
+    .nav__listlinks{
+        @apply flex items-center text-zinc-800 space-x-3 capitalize text-lg font-bold bg-[#f9f9f9e0] sm:-translate-x-[200%] sm:w-full  sm:top-10 transition sm:flex-col sm:absolute  sm:right-1/2 ;
+    }
+    .box2 {
+        @apply after:content-[''] after:h-32 p-2 after:w-full after:absolute after:bg-gradient-to-t after:from-[#f3f3f3] after:to-transparent;
+    }
+    /* --==================
+    ======start coure========
+    ===================== */
+    .cours button a{
+        @apply text-xl bg-withbg rounded-xl  py-2 w-20  tracking-wide leading-[0] 
+    }
+    .cours .is-active{
+        @apply bg-redColorHovr text-withbg font-bold
+    }
+}
