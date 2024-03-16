@@ -336,3 +336,62 @@ btnHead[2].onclick=function(){
     document.querySelector(".Cours").classList.add("hidden")
     document.querySelector(".td").classList.remove("hidden")
 }
+
+emailList=[
+        {
+            "name":'A.El Mouatasim',
+            'adrris_email':'a.elmouatasim@uiz.ac.ma'
+        },
+        {
+            "name":'I.Eljaafari',
+            'adrris_email':'eljaafari.ilyas@gmail.com'
+        },
+        {
+            "name":'I.Dbibih',
+            'adrris_email':'imane.it@gmail.com'
+        },
+        {
+            "name":'M.Boudhane',
+            'adrris_email':'mrboudhane@gmail.com'
+        },
+        {
+            "name":'J.Oudaani',
+            'adrris_email':'oudaani1970@gmail.com'
+        },
+        {
+            "name":'A.Ellahyani',
+            'adrris_email':'a.elahyani@uiz.ac.ma'
+        },
+        {
+            "name":'A.Bouain',
+            'adrris_email':'abdelhadi008@gmail.com'
+        },
+        {
+            "name":'R.Dakir',
+            'adrris_email':'r.dakir@uiz.ac.ma'
+        },
+        {
+            "name":'M.Laraqui',
+            'adrris_email':'laraquimed@gmail.com'
+        },
+]
+
+function AfficherEmail(){
+    boxEmail = document.querySelector(".box_email")
+    for(email of emailList){
+        boxEmail.innerHTML+=`
+        <div class="box flex justify-between px-3 items-center bg-white  rounded-md py-2">
+                <p class="text-[#333] capitalize font-bold text-xl tracking-widest sm:text-[1.15rem]">${email.name}</p>
+                <div class="email_ink w-14 h-10 flex justify-center items-center  rounded-md text-withbg bg-redClolor">
+                <a href="mailto:${email.adrris_email}" target="_blank">
+                    <span class="material-symbols-outlined text-3xl sm:text-[24px]">
+                        forward_to_inbox
+                    </span>
+                    </a>
+                </div>
+        </div>
+        `
+
+    }
+}
+AfficherEmail()
