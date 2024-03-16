@@ -9,6 +9,14 @@ body{
 .cour_list::-webkit-scrollbar{
     display: none
 }
+@layer components{
+    .hidden_div{
+        @apply fixed w-full h-full top-0 left-0 z-[60]
+    }
+    .hidden_div::before{
+        @apply w-full h-full content-[""] opacity-80 bg-withbg absolute top-0 left-0
+    }
+}
 
 /* =====================
 =======start email======

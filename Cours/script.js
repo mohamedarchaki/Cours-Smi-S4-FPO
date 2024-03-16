@@ -256,9 +256,10 @@ AfficherTab(tdListe,TDs,"td")
 ===================================*/
 let  afficherDiv =document.querySelector(".afficher-div")
 function afficherCour(i,listes){
+    afficherDiv.classList.add('hidden_div')
     afficherDiv.innerHTML+=
     `
-    <div class="afficher z-40 rounded-md fixed text-withbg grid grid-cols-2 sm:grid-cols-1 top-6 left-1/2 shadow  w-10/12 h-5/6 -translate-x-1/2">
+    <div class="afficher z-40 rounded-md fixed text-withbg grid grid-cols-2 sm:grid-cols-1 top-6 left-1/2 shadow-lg  w-10/12 h-5/6 -translate-x-1/2">
         <div class="clos absolute right-2 text-zinc-800 sm:text-withbg text-xl top-2 cursor-pointer">
             <span class="material-symbols-outlined">
                 close
@@ -275,6 +276,7 @@ function afficherCour(i,listes){
     afficherChapit(i,listes)
     let closeAffich = document.querySelector(".clos")
 closeAffich.addEventListener('click',()=>{
+    afficherDiv.classList.remove('hidden_div')
     afficherDiv.innerHTML=""
 })
 }
